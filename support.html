@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Destek · Tamtava</title>
+  <meta name="description" content="Help with Tamtava: contact and common questions. Tamtava için destek.">
+  <link rel="canonical" href="https://tamtava.com/support">
+  <link rel="icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to support</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/icon-192.png" alt="">Tamtava</a>
+      <nav class="lang" aria-label="Language / Dil">
+        <a href="#en">English</a>
+        <a href="#tr" lang="tr">Türkçe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Support <span lang="tr">· Destek</span></h1>
+
+    <section id="en">
+      <h2>Help with Tamtava</h2>
+      <div class="card">
+        <p>Questions, problems or ideas? Write to us:</p>
+        <p class="contact"><a href="mailto:oturaliogluetu@gmail.com">oturaliogluetu@gmail.com</a></p>
+        <p>Tell us which phone you use and what you were doing, and we will reply.</p>
+      </div>
+
+      <h3>Do I need an account or the internet?</h3>
+      <p>No. Tamtava works offline and has no account. Everything you enter stays on your phone (<a href="/privacy">privacy policy</a>).</p>
+
+      <h3>Why didn't I hear a timer?</h3>
+      <p>Timers and their spoken alert work while Tamtava is open on your screen; cook mode keeps the screen awake while you cook. When your iPhone is on Silent, the spoken alert is muted.</p>
+
+      <h3>How do I change the language?</h3>
+      <p>Me → Language: English or Türkçe. System follows your phone's language.</p>
+
+      <h3>How do I delete my data?</h3>
+      <p>Me → <em>Reset app</em> deletes everything Tamtava has stored on your phone. Uninstalling the app does the same.</p>
+
+      <h3>Allergies</h3>
+      <p>Tamtava's recipes name common allergens, but always check ingredient labels too.</p>
+    </section>
+
+    <section id="tr" lang="tr">
+      <h2>Tamtava için destek</h2>
+      <div class="card">
+        <p>Soru, sorun ya da önerin mi var? Bize yaz:</p>
+        <p class="contact"><a href="mailto:oturaliogluetu@gmail.com">oturaliogluetu@gmail.com</a></p>
+        <p>Hangi telefonu kullandığını ve ne yaparken olduğunu da yaz; sana yanıt verelim.</p>
+      </div>
+
+      <h3>Hesap ya da internet gerekiyor mu?</h3>
+      <p>Hayır. Tamtava internetsiz çalışır ve hesap gerektirmez. Girdiğin her şey telefonunda kalır (<a href="/privacy#tr">gizlilik politikası</a>).</p>
+
+      <h3>Zamanlayıcıyı neden duymadım?</h3>
+      <p>Zamanlayıcılar ve sesli uyarıları, Tamtava ekranda açıkken çalışır; pişirme modu sen pişirirken ekranı açık tutar. iPhone'un sessiz moddayken sesli uyarı duyulmaz.</p>
+
+      <h3>Dili nasıl değiştiririm?</h3>
+      <p>Ben → Dil: English ya da Türkçe. Sistem, telefonunun dilini izler.</p>
+
+      <h3>Verilerimi nasıl silerim?</h3>
+      <p>Ben → <em>Uygulamayı sıfırla</em>, Tamtava'nın telefonunda sakladığı her şeyi siler. Uygulamayı kaldırmak da aynısını yapar.</p>
+
+      <h3>Alerjiler</h3>
+      <p>Tamtava'nın tarifleri yaygın alerjenleri belirtir; yine de ürün etiketlerini mutlaka kontrol et.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Osman Turalıoğlu</span>
+      <nav aria-label="Site">
+        <a href="/privacy">Privacy · Gizlilik</a>
+        <a href="/support">Support · Destek</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    // On a phone set to Turkish, open at the Turkish text unless the link already names a part.
+    (function () {
+      try {
+        if (!location.hash && /^tr\b/i.test(navigator.language || '')) {
+          var tr = document.getElementById('tr');
+          if (tr) {
+            history.replaceState(null, '', '#tr');
+            tr.scrollIntoView();
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
