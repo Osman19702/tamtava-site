@@ -14,9 +14,11 @@ Do not rename `privacy.html` or `support.html`: the app's released builds link t
 
 Edit the HTML, commit and push to `main`; GitHub Pages republishes within a minute or two. When the privacy policy changes, update its date ("Effective from" / "Yürürlük tarihi") in both languages, and keep the app's behaviour and the policy in step: the policy must change before the app ships analytics, crash reporting, accounts, sync, anything that calls a server, or EAS Update.
 
-## Before the first publish
+Never put the owner's home address on the site or in this repository: it is public. The policy names the publisher, the country and the email address, and the KVKK notice gives a postal address only on request by email.
 
-`privacy.html` holds `{{ADDRESS}}`, `{{DATE_EN}}` and `{{DATE_TR}}`. Replace every one; this must print nothing before you push:
+## Before a publish
+
+`privacy.html` must hold no unfilled `{{…}}` placeholder; this must print nothing before you push:
 
 ```bash
 grep -n '{{' *.html
