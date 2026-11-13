@@ -10,6 +10,8 @@ The static website for the Tamtava app, served by GitHub Pages at <https://tamta
 
 Do not rename `privacy.html` or `support.html`: the app's released builds link to `/privacy` and `/support`.
 
+The home page links to the App Store listing (<https://apps.apple.com/app/tamtava/id6831713388>, no country, so each visitor lands in their own store) with `app-store-badge.svg`: Apple's "Download on the App Store" badge, black, US-UK, served from here and unchanged, since Apple's marketing guidelines allow no edits to it.
+
 ## Changing a page
 
 Edit the HTML, commit and push to `main`; GitHub Pages republishes within a minute or two. When the privacy policy changes, update its date ("Effective from" / "Yürürlük tarihi") in both languages, and keep the app's behaviour and the policy in step: the policy must change before the app ships analytics, crash reporting, accounts, sync, anything that calls a server, or EAS Update.
